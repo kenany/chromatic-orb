@@ -4,7 +4,17 @@ var X = 22;
 
 function chromatic(opts) {
   if (!opts.sockets || opts.sockets < 1 || opts.sockets > 6) {
-    throw new Error('expected: 0 < opts.sockets < 7')
+    throw new Error('expected: 0 < opts.sockets < 7');
+  }
+
+  var red = opts.red || 0;
+  var green = opts.green || 0;
+  var blue = opts.blue || 0;
+
+  if (red < 0 || green < 0 || blue < 0
+    || red + blue + green === 0
+    || red + blue + green > opts.sockets) {
+    throw new Error('invalid number of desired sockets');
   }
 
   function multinomial(red, green, blue, free, pos) {
@@ -42,10 +52,6 @@ function chromatic(opts) {
       * factorial(blue)) * Math.pow(rc, red * 2) * Math.pow(gc, green * 2)
       * Math.pow(bc, blue * 2);
   }
-
-  var red = opts.red || 0;
-  var green = opts.green || 0;
-  var blue = opts.blue || 0;
 
   var strength = opts.strength || 0;
   var dexterity = opts.dexterity || 0;
