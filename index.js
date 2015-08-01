@@ -3,6 +3,9 @@ var factorial = require('factorial');
 var X = 22;
 
 function chromatic(opts) {
+  if (!opts.sockets || opts.sockets < 1 || opts.sockets > 6) {
+    throw new Error('expected: 0 < opts.sockets < 7')
+  }
 
   function multinomial(red, green, blue, free, pos) {
     pos = pos || 1;

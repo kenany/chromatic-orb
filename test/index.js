@@ -45,3 +45,10 @@ test('6L: 212 dex, 5G, 1B', function(t) {
     dexterity: 212
   }), 0.2375764986368402);
 });
+
+test('throws on invalid sockets', function(t) {
+  t.plan(3);
+  t.throws(chromatic.bind(null, {}), new RegExp(/expected: 0 < opts.sockets < 7/));
+  t.throws(chromatic.bind(null, {sockets: 0}), new RegExp(/expected: 0 < opts.sockets < 7/));
+  t.throws(chromatic.bind(null, {sockets: 7}), new RegExp(/expected: 0 < opts.sockets < 7/));
+});
