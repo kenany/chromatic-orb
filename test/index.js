@@ -48,9 +48,12 @@ test('6L: 212 dex, 5G, 1B', function(t) {
 
 test('throws on invalid sockets', function(t) {
   t.plan(3);
-  t.throws(chromatic.bind(null, {}), new RegExp(/expected: 0 < opts.sockets < 7/));
-  t.throws(chromatic.bind(null, {sockets: 0}), new RegExp(/expected: 0 < opts.sockets < 7/));
-  t.throws(chromatic.bind(null, {sockets: 7}), new RegExp(/expected: 0 < opts.sockets < 7/));
+
+  var expected = new RegExp(/expected: 0 < opts.sockets < 7/);
+
+  t.throws(chromatic.bind(null, {}), expected);
+  t.throws(chromatic.bind(null, {sockets: 0}), expected);
+  t.throws(chromatic.bind(null, {sockets: 7}), expected);
 });
 
 test('throws on invalid desired sockets', function(t) {
@@ -64,11 +67,12 @@ test('throws on invalid desired sockets', function(t) {
     {blue: 9},
     {red: 3, green: 2, blue: 2}
   ];
+  var invalidMsg = new RegExp(/invalid number of desired sockets/);
 
   t.plan(FIXTURES.length);
 
   FIXTURES.forEach(function(f) {
     f.sockets = 6;
-    t.throws(chromatic.bind(null, f), new RegExp(/invalid number of desired sockets/));
+    t.throws(chromatic.bind(null, f), invalidMsg);
   });
 });
