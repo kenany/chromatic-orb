@@ -55,19 +55,8 @@ var chromatic = require('chromatic-orb');
 
 ### `chromatic(opts)`
 
-Given `opts`, an _Object_, returns the probability of rolling the desired socket
-colors as a _Number_.
+Same API as [`socket-colors-chance`][socket-colors-chance].
 
-  - `opts.sockets`: number of sockets
-  - `opts.strength`: strength requirement
-  - `opts.dexterity`: dexterity requirement
-  - `opts.intelligence`: intelligence requirement
-  - `opts.red`: desired number of red sockets
-  - `opts.green`: desired number of green sockets
-  - `opts.blue`: desired number of blue sockets
-
-`opts.sockets` and at least one of `opts.{red,green,blue}` are the only required
-parameters.
 
    [travis]: https://travis-ci.org/KenanY/chromatic-orb
    [travis-svg]: https://img.shields.io/travis/KenanY/chromatic-orb.svg
@@ -75,3 +64,4 @@ parameters.
    [gemnasium-svg]: https://img.shields.io/gemnasium/KenanY/chromatic-orb.svg
    [siveran]: https://github.com/Siveran/siveran.github.io
    [lawphill]: http://shouldichromeit.herokuapp.com/howitworks
+   [socket-colors-chance]: https://github.com/KenanY/socket-colors-chance
