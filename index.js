@@ -1,3 +1,5 @@
+'use strict';
+
 import socketColorsChance from 'socket-colors-chance';
 import factorial from 'factorial';
 
