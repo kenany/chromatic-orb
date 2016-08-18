@@ -1,14 +1,14 @@
-var socketColorsChance = require('socket-colors-chance');
-var factorial = require('factorial');
+import socketColorsChance from 'socket-colors-chance';
+import factorial from 'factorial';
 
-var X = 22;
+const X = 22;
 
 function chromatic(opts) {
-  var chance = socketColorsChance(opts);
+  let chance = socketColorsChance(opts);
 
-  var strength = opts.strength || 0;
-  var dexterity = opts.dexterity || 0;
-  var intelligence = opts.intelligence || 0;
+  let strength = opts.strength || 0;
+  let dexterity = opts.dexterity || 0;
+  let intelligence = opts.intelligence || 0;
 
   if (strength > 0 && dexterity === 0 && intelligence === 0) {
     strength += 32;
@@ -20,18 +20,13 @@ function chromatic(opts) {
     intelligence += 32;
   }
 
-  var div = strength + dexterity + intelligence + 3 * X;
+  const div = strength + dexterity + intelligence + 3 * X;
 
-  var rc = (X + strength) / div;
-  var gc = (X + dexterity) / div;
-  var bc = (X + intelligence) / div;
+  const rc = (X + strength) / div;
+  const gc = (X + dexterity) / div;
+  const bc = (X + intelligence) / div;
 
-  function bonus(free, dred, dgreen, dblue, red, green, blue, pos) {
-    pos = pos || 1;
-    red = red || 0;
-    green = green || 0;
-    blue = blue || 0;
-
+  function bonus(free, dred, dgreen, dblue, red = 0, green = 0, blue = 0, pos = 1) {
     if (red >= dred && green >= dgreen && blue >= dblue) {
       return 0;
     }
@@ -53,4 +48,4 @@ function chromatic(opts) {
   return chance;
 }
 
-module.exports = chromatic;
+export default chromatic;
