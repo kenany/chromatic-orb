@@ -9,11 +9,10 @@
   "license": "MIT",
   "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
   "main": "dist/index.js",
-  "jsnext:main": "index.js",
+  "jsnext:main": "dist/index.es.js",
   "files": [
-    "index.js",
-    "LICENSE.txt",
-    "dist"
+    "dist",
+    "LICENSE.txt"
   ],
   "directories": {
     "test": "test"

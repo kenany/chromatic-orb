@@ -1,5 +1,3 @@
-'use strict';
-
 import buble from 'rollup-plugin-buble'
 
 const pkg = require('./package.json');
@@ -10,11 +8,15 @@ export default {
   plugins: [
     buble()
   ],
-  external: external,
+  external,
   targets: [
     {
       dest: pkg['main'],
       format: 'cjs'
+    },
+    {
+      dest: pkg['jsnext:main'],
+      format: 'es'
     }
   ]
 };
