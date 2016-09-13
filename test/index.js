@@ -1,5 +1,3 @@
-'use strict';
-
 var chromatic = require('../dist/');
 var test = require('tape');
 var isFunction = require('lodash.isfunction');
