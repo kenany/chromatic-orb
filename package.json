@@ -31,7 +31,7 @@
     "@kenan/eslint-config": "^3.0.0",
     "eslint": "^3.4.0",
     "lodash.isfunction": "^3.0.6",
-    "rollup": "^0.35.10",
+    "rollup": "^0.36.0",
     "rollup-plugin-buble": "^0.13.0",
     "tape": "^4.0.1"
   }
