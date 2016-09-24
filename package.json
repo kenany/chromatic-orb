@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "lint": "eslint index.js test/index.js",
+    "lint": "eslint *.js test/*.js",
     "pretest": "npm run -s lint && npm run -s build",
     "test": "tape test/index.js"
   },
