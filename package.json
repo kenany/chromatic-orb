@@ -28,7 +28,7 @@
     "socket-colors-chance": "^1.0.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "^3.0.0",
+    "@kenan/eslint-config": "^4.0.0",
     "eslint": "^3.4.0",
     "lodash.isfunction": "^3.0.6",
     "rollup": "^0.36.0",
