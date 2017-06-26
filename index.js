@@ -35,8 +35,8 @@ function chromatic(opts) {
         ? bonus(free - 1, dred, dgreen, dblue, red + 1, green, blue, 1)
         : 0)
         + (pos <= 2
-          ? bonus(free - 1, dred, dgreen, dblue, red, green + 1, blue, 2)
-          : 0)
+        ? bonus(free - 1, dred, dgreen, dblue, red, green + 1, blue, 2)
+        : 0)
         + bonus(free - 1, dred, dgreen, dblue, red, green, blue + 1, 3);
     }
     return factorial(red + green + blue) / (factorial(red) * factorial(green)
