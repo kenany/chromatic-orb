@@ -60,20 +60,20 @@ test('throws on invalid sockets', function(t) {
   var expected = new RegExp(/expected: 0 < opts.sockets < 7/);
 
   t.throws(chromatic.bind(null, {}), expected);
-  t.throws(chromatic.bind(null, {sockets: 0}), expected);
-  t.throws(chromatic.bind(null, {sockets: 7}), expected);
+  t.throws(chromatic.bind(null, { sockets: 0 }), expected);
+  t.throws(chromatic.bind(null, { sockets: 7 }), expected);
 });
 
 test('throws on invalid desired sockets', function(t) {
   var FIXTURES = [
-    {red: -1},
-    {green: -2},
-    {blue: -3},
+    { red: -1 },
+    { green: -2 },
+    { blue: -3 },
     {},
-    {red: 7},
-    {green: 8},
-    {blue: 9},
-    {red: 3, green: 2, blue: 2}
+    { red: 7 },
+    { green: 8 },
+    { blue: 9 },
+    { red: 3, green: 2, blue: 2 }
   ];
   var invalidMsg = new RegExp(/invalid number of desired sockets/);
 

@@ -28,10 +28,10 @@
     "socket-colors-chance": "^1.0.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "5.0.0",
+    "@kenan/eslint-config": "6.0.0",
     "@kenan/renovate-config": "1.1.1",
     "almost-equal": "1.1.0",
-    "eslint": "4.19.1",
+    "eslint": "5.16.0",
     "lodash.isfunction": "3.0.9",
     "rollup": "0.53.4",
     "rollup-plugin-buble": "0.18.0",
