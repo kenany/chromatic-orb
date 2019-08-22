@@ -1,6 +1,10 @@
-var chromatic = require('../dist/');
-var test = require('tape');
+'use strict';
+
+var almostEqual = require('almost-equal');
 var isFunction = require('lodash.isfunction');
+var test = require('tape');
+
+var chromatic = require('../dist/');
 
 test('exports a function', function(t) {
   t.plan(1);
@@ -19,12 +23,16 @@ test('6L: 2R, 2G, 2B', function(t) {
 
 test('6L: 180 str, 5R, 1G', function(t) {
   t.plan(1);
-  t.equal(chromatic({
-    sockets: 6,
-    red: 5,
-    green: 1,
-    strength: 180
-  }), 0.23161598136624462);
+  t.ok(almostEqual(
+    chromatic({
+      sockets: 6,
+      red: 5,
+      green: 1,
+      strength: 180
+    }),
+    0.23161598136624462,
+    0.0000000000000001
+  ));
 });
 
 test('6L: 180 str, 6B', function(t) {
