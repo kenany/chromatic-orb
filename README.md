@@ -1,7 +1,5 @@
 # chromatic-orb
 
-[![Build Status][travis-svg]][travis]
-
 Calculate odds of rolling desired socket colors with a chromatic orb. Formula is
 based on [Siveran's calculator][siveran], which is based on
 [Lawphill's calculator][lawphill]. Results are not guaranteed to be completely
@@ -57,8 +55,6 @@ var chromatic = require('chromatic-orb');
 Same API as [`socket-colors-chance`][socket-colors-chance].
 
 
-   [travis]: https://travis-ci.org/KenanY/chromatic-orb
-   [travis-svg]: https://img.shields.io/travis/KenanY/chromatic-orb.svg
    [siveran]: https://github.com/Siveran/siveran.github.io
    [lawphill]: http://shouldichromeit.herokuapp.com/howitworks
    [socket-colors-chance]: https://github.com/KenanY/socket-colors-chance
