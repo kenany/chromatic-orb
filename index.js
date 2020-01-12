@@ -26,7 +26,16 @@ function chromatic(opts) {
   const gc = (X + dexterity) / div;
   const bc = (X + intelligence) / div;
 
-  function bonus(free, dred, dgreen, dblue, red = 0, green = 0, blue = 0, pos = 1) {
+  function bonus(
+    free,
+    dred,
+    dgreen,
+    dblue,
+    red = 0,
+    green = 0,
+    blue = 0,
+    pos = 1
+  ) {
     if (red >= dred && green >= dgreen && blue >= dblue) {
       return 0;
     }
