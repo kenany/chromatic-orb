@@ -32,7 +32,7 @@
   "devDependencies": {
     "@kenan/eslint-config": "7.0.0",
     "@kenan/renovate-config": "1.1.1",
-    "acorn": "6.4.1",
+    "acorn": "7.2.0",
     "almost-equal": "1.1.0",
     "eslint": "6.8.0",
     "lodash.isfunction": "3.0.9",
