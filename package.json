@@ -36,7 +36,7 @@
     "almost-equal": "1.1.0",
     "eslint": "6.8.0",
     "lodash.isfunction": "3.0.9",
-    "microbundle": "0.11.0",
+    "microbundle": "0.12.0",
     "rollup": "0.68.2",
     "tape": "5.0.1"
   }
