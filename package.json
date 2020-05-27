@@ -38,6 +38,6 @@
     "lodash.isfunction": "3.0.9",
     "microbundle": "0.11.0",
     "rollup": "0.68.2",
-    "tape": "4.13.2"
+    "tape": "5.0.1"
   }
 }
