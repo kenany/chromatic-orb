@@ -30,10 +30,10 @@
     "socket-colors-chance": "^1.0.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "7.0.0",
+    "@kenan/eslint-config": "^8.0.0",
     "@kenan/renovate-config": "1.1.1",
     "almost-equal": "1.1.0",
-    "eslint": "6.8.0",
+    "eslint": "^7.6.0",
     "lodash.isfunction": "3.0.9",
     "microbundle": "0.12.0",
     "tape": "5.0.1"
