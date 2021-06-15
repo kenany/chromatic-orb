@@ -1,3 +1,6 @@
 module.exports = {
-  extends: '@kenan'
+  extends: '@kenan',
+  rules: {
+    'import/extensions': 0
+  }
 };
