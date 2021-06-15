@@ -1,10 +1,10 @@
 'use strict';
 
-var almostEqual = require('almost-equal');
-var isFunction = require('lodash.isfunction');
-var test = require('tape');
+const almostEqual = require('almost-equal');
+const isFunction = require('lodash.isfunction');
+const test = require('tape');
 
-var chromatic = require('../dist/');
+const chromatic = require('../dist/');
 
 test('exports a function', function(t) {
   t.plan(1);
@@ -57,7 +57,7 @@ test('6L: 212 dex, 5G, 1B', function(t) {
 test('throws on invalid sockets', function(t) {
   t.plan(3);
 
-  var expected = new RegExp(/expected: 0 < opts.sockets < 7/);
+  const expected = new RegExp(/expected: 0 < opts.sockets < 7/);
 
   t.throws(chromatic.bind(null, {}), expected);
   t.throws(chromatic.bind(null, { sockets: 0 }), expected);
@@ -65,7 +65,7 @@ test('throws on invalid sockets', function(t) {
 });
 
 test('throws on invalid desired sockets', function(t) {
-  var FIXTURES = [
+  const FIXTURES = [
     { red: -1 },
     { green: -2 },
     { blue: -3 },
@@ -75,7 +75,7 @@ test('throws on invalid desired sockets', function(t) {
     { blue: 9 },
     { red: 3, green: 2, blue: 2 }
   ];
-  var invalidMsg = new RegExp(/invalid number of desired sockets/);
+  const invalidMsg = new RegExp(/invalid number of desired sockets/);
 
   t.plan(FIXTURES.length);
 
