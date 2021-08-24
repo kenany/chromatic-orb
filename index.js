@@ -3,6 +3,10 @@ import factorial from 'factorial';
 
 const X = 22;
 
+/**
+ * @param {unknown} opts
+ * @returns {number}
+ */
 function chromatic(opts) {
   let chance = socketColorsChance(opts);
 
@@ -26,6 +30,17 @@ function chromatic(opts) {
   const gc = (X + dexterity) / div;
   const bc = (X + intelligence) / div;
 
+  /**
+   * @param {number} free
+   * @param {number} dred
+   * @param {number} dgreen
+   * @param {number} dblue
+   * @param {number} red
+   * @param {number} green
+   * @param {number} blue
+   * @param {number} pos
+   * @returns {number}
+   */
   function bonus(
     free,
     dred,
