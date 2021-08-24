@@ -30,7 +30,7 @@
     "socket-colors-chance": "^1.1.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "^9.0.3",
+    "@kenan/eslint-config": "^9.0.4",
     "@kenan/renovate-config": "^1.5.0",
     "almost-equal": "^1.1.0",
     "eslint": "^7.32.0",
