@@ -46,6 +46,6 @@
     "lodash.isfunction": "^3.0.9",
     "microbundle": "^0.14.1",
     "semantic-release": "^18.0.1",
-    "tape": "^5.3.1"
+    "tape": "^5.3.2"
   }
 }
