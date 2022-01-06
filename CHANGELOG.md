@@ -1,3 +1,10 @@
+### [2.0.1](https://github.com/KenanY/chromatic-orb/compare/2.0.0...2.0.1) (2022-01-06)
+
+
+### Bug Fixes
+
+* **deps:** socket-colors-chance@1.1.1 ([2cb05d8](https://github.com/KenanY/chromatic-orb/commit/2cb05d806133eb6a54d5dc5d5df8cdfd0bb6bdd4))
+
 ## [2.0.0](https://github.com/KenanY/chromatic-orb/compare/1.2.3...2.0.0) (2021-12-21)
 
 
