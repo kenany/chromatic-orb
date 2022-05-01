@@ -43,7 +43,7 @@
     "conventional-changelog-conventionalcommits": "^4.6.3",
     "eslint": "^7.32.0",
     "lodash.isfunction": "^3.0.9",
-    "microbundle": "^0.14.2",
+    "microbundle": "^0.15.0",
     "semantic-release": "^19.0.2",
     "tape": "^5.5.3"
   }
