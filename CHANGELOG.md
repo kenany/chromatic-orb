@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/KenanY/chromatic-orb/compare/2.0.2...3.0.0) (2022-12-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v12 is no longer supported.
+
+### Features
+
+* drop Node.js v12 support ([3111a3c](https://github.com/KenanY/chromatic-orb/commit/3111a3c9f26322916147cf8b6ad584d81333c13f))
+
 ### [2.0.2](https://github.com/KenanY/chromatic-orb/compare/2.0.1...2.0.2) (2022-02-03)
 
 
