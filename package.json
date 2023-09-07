@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "factorial": "^2.0.0",
-    "socket-colors-chance": "^3.0.0"
+    "socket-colors-chance": "^4.0.0"
   },
   "devDependencies": {
     "@kenan/eslint-config": "^10.0.2",
