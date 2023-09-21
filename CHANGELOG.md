@@ -1,3 +1,14 @@
+## [4.0.0](https://github.com/kenany/chromatic-orb/compare/3.0.1...4.0.0) (2023-09-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v14 and v16 are no longer supported.
+
+### Features
+
+* drop Node.js v14 and v16 ([5e281ee](https://github.com/kenany/chromatic-orb/commit/5e281eee326a05c23e0469d1e2518d14cea283af))
+
 ## [3.0.1](https://github.com/KenanY/chromatic-orb/compare/3.0.0...3.0.1) (2022-12-28)
 
 
