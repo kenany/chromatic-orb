@@ -44,7 +44,7 @@
     "eslint": "^8.53.0",
     "lodash.isfunction": "^3.0.9",
     "microbundle": "^0.15.1",
-    "semantic-release": "^22.0.7",
+    "semantic-release": "^22.0.8",
     "tape": "^5.7.2"
   }
 }
