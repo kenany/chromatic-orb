@@ -41,7 +41,7 @@
     "@semantic-release/git": "^10.0.1",
     "almost-equal": "^1.1.0",
     "conventional-changelog-conventionalcommits": "^8.0.0",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "lodash.isfunction": "^3.0.9",
     "microbundle": "^0.15.1",
     "semantic-release": "^24.2.0",
