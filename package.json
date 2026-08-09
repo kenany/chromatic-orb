@@ -1,50 +1,65 @@
 {
   "name": "chromatic-orb",
-  "version": "4.0.0",
+  "version": "0.0.0-semantic-release",
   "description": "Calculate chromatic orb chances",
   "keywords": [
     "path of exile"
   ],
-  "repository": "github:kenany/chromatic-orb",
   "license": "MIT",
   "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
-  "source": "index.js",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "umd:main": "dist/index.umd.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenany/chromatic-orb.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "commonjs",
+  "types": "dist/index.d.cts",
+  "main": "dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*.mjs": {
+      "default": "./dist/*.mjs"
+    },
+    "./*.cjs": {
+      "default": "./dist/*.cjs"
+    },
+    "./*": {
+      "import": "./dist/*.mjs",
+      "require": "./dist/*.cjs"
+    }
+  },
   "files": [
     "dist",
-    "CHANGELOG.md",
     "LICENSE.txt"
   ],
-  "directories": {
-    "test": "test"
-  },
   "engines": {
-    "node": "18 || >=20"
+    "node": "22 || 24 || >=26"
   },
   "scripts": {
-    "build": "microbundle build --strict --no-compress",
-    "lint": "eslint *.js test/*.js",
-    "pretest": "npm run -s lint && npm run -s build",
-    "test": "tape test/index.js",
-    "prepack": "npm run -s build",
-    "release": "semantic-release"
+    "build": "tsdown && tsc --noEmit",
+    "lint": "biome check",
+    "test": "vitest run",
+    "publint": "publint --strict",
+    "prepare": "pnpm build"
   },
   "dependencies": {
     "factorial": "^2.0.0",
-    "socket-colors-chance": "^4.0.0"
+    "socket-colors-chance": "^5.0.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "11.1.18",
-    "@semantic-release/changelog": "7.0.0",
-    "@semantic-release/git": "11.0.1",
-    "almost-equal": "1.1.0",
+    "@biomejs/biome": "2.5.4",
+    "@containerbase/semantic-release-pnpm": "1.4.2",
+    "@kenan/biome-config": "1.0.6",
     "conventional-changelog-conventionalcommits": "9.3.1",
-    "eslint": "8.57.1",
-    "lodash.isfunction": "3.0.9",
-    "microbundle": "0.15.1",
-    "semantic-release": "25.0.9",
-    "tape": "5.10.2"
+    "publint": "0.3.21",
+    "semantic-release": "25.0.8",
+    "tsdown": "0.22.12",
+    "typescript": "7.0.2",
+    "vitest": "4.1.10"
   }
 }

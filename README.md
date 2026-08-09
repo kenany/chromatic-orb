@@ -11,14 +11,14 @@ For example, let's say you want to find out the chances of rolling 5 red sockets
 and 1 green socket on a piece of armor that requires 180 strength to wield:
 
 ``` javascript
-var chromatic = require('chromatic-orb');
+import { chromatic } from 'chromatic-orb';
 
-var chance = chromatic({
+const chance = chromatic({
   sockets: 6,
   red: 5,
   green: 1,
   strength: 180
-}));
+});
 // => 0.23161598136624462
 ```
 
@@ -47,7 +47,7 @@ $ npm install chromatic-orb
 ## API
 
 ``` javascript
-var chromatic = require('chromatic-orb');
+import { chromatic } from 'chromatic-orb';
 ```
 
 ### `chromatic(opts)`
