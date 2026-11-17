@@ -10,14 +10,14 @@ accurate.
 For example, let's say you want to find out the chances of rolling 5 red sockets
 and 1 green socket on a piece of armor that requires 180 strength to wield:
 
-``` javascript
+```javascript
 import { chromatic } from 'chromatic-orb';
 
 const chance = chromatic({
   sockets: 6,
   red: 5,
   green: 1,
-  strength: 180
+  strength: 180,
 });
 // => 0.23161598136624462
 ```
@@ -25,7 +25,7 @@ const chance = chromatic({
 That's a 23% chance of success! From here, we can also find out the average
 number of chromatic orbs one would have to spend:
 
-``` javascript
+```javascript
 1 / chance;
 // => 4.3
 ```
@@ -33,27 +33,26 @@ number of chromatic orbs one would have to spend:
 So on average it will take you 4-5 chromatic orbs to roll such sockets. Note
 that you can also calculate standard deviation yourself:
 
-``` javascript
+```javascript
 Math.sqrt((1 - chance) / Math.pow(chance, 2));
 // => 3.78
 ```
 
 ## Installation
 
-``` bash
+```bash
 $ npm install chromatic-orb
 ```
 
 ## API
 
-``` javascript
+```javascript
 import { chromatic } from 'chromatic-orb';
 ```
 
 ### `chromatic(opts)`
 
 Same API as [`socket-colors-chance`][socket-colors-chance].
-
 
    [siveran]: https://github.com/Siveran/siveran.github.io
    [lawphill]: http://shouldichromeit.herokuapp.com/howitworks
